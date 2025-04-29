@@ -97,7 +97,7 @@ def get_signed_url(request):
 
 
 def process_embedding(input_text):
-    client = OpenAI
+    client = OpenAI(api_key="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")
 
     response = client.embeddings.create(
         input=input_text,
